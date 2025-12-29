@@ -1,0 +1,9 @@
+import torch
+print("torch:", torch.__version__)
+print("torch.version.cuda:", torch.version.cuda)
+print("is_available:", torch.cuda.is_available())
+if torch.cuda.is_available():
+    print("gpu:", torch.cuda.get_device_name(0))
+    print("capability:", torch.cuda.get_device_capability(0))
+    print("arch_list:", torch.cuda.get_arch_list())
+    print(torch.randn(1, device="cuda"))
