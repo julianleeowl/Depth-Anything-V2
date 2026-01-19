@@ -28,7 +28,8 @@ def main():
     depth_anything = DepthAnythingV2(**model_configs[args.encoder])
     from safetensors.torch import load_file
     # depth_anything.load_state_dict(load_file(r'C:\owl\3DEngine\models\model19.safetensors', device='cpu'))
-    depth_anything.load_state_dict(load_file(f'/home/hoiliu/julian/work/Depth-Anything-V2/checkpoints/Distill-Any-Depth-Multi-Teacher-Small.safetensors', device='cpu'))
+    # depth_anything.load_state_dict(load_file(f'/home/hoiliu/julian/work/Depth-Anything-V2/checkpoints/Distill-Any-Depth-Multi-Teacher-Small.safetensors', device='cpu'))
+    depth_anything.load_state_dict(load_file(f'/mnt/model-weights/depth-model/distill-any-depth-multi-teacher-small.safetensors', device='cpu'))
     
     # Convert model to specified precision
     device = 'cpu'
