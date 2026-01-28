@@ -1,0 +1,142 @@
+[
+  { "count" : 2109 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /patch_embed/proj/Conv", "timeMs" : 13.1324, "averageMs" : 0.00622682, "medianMs" : 0.0064, "percentage" : 0.459338 }
+, { "name" : "/patch_embed/proj/Conv", "timeMs" : 42.5444, "averageMs" : 0.0201728, "medianMs" : 0.020096, "percentage" : 1.4881 }
+, { "name" : "__myl_TranConcAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_0", "timeMs" : 12.1823, "averageMs" : 0.00577632, "medianMs" : 0.005472, "percentage" : 0.426106 }
+, { "name" : "__mye55480+__mye55468+__mye55456_myl2_1", "timeMs" : 24.8822, "averageMs" : 0.0117981, "medianMs" : 0.011744, "percentage" : 0.870321 }
+, { "name" : "_gemm_mha_v2_myl2_2", "timeMs" : 46.2883, "averageMs" : 0.021948, "medianMs" : 0.021856, "percentage" : 1.61905 }
+, { "name" : "/blocks_0/attn/proj/MatMul_myl2_3", "timeMs" : 18.5265, "averageMs" : 0.0087845, "medianMs" : 0.00784, "percentage" : 0.648013 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_4", "timeMs" : 11.661, "averageMs" : 0.00552917, "medianMs" : 0.005504, "percentage" : 0.407874 }
+, { "name" : "__myl_Fc_myl2_5", "timeMs" : 28.911, "averageMs" : 0.0137084, "medianMs" : 0.013696, "percentage" : 1.01124 }
+, { "name" : "/blocks_0/mlp/fc2/MatMul_myl2_6", "timeMs" : 27.8003, "averageMs" : 0.0131818, "medianMs" : 0.01344, "percentage" : 0.972389 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_7", "timeMs" : 11.6519, "averageMs" : 0.00552486, "medianMs" : 0.005504, "percentage" : 0.407556 }
+, { "name" : "__mye55595+__mye55583+__mye55571_myl2_8", "timeMs" : 24.7987, "averageMs" : 0.0117585, "medianMs" : 0.01168, "percentage" : 0.867398 }
+, { "name" : "_gemm_mha_v2_myl2_9", "timeMs" : 46.2092, "averageMs" : 0.0219105, "medianMs" : 0.021888, "percentage" : 1.61628 }
+, { "name" : "/blocks_1/attn/proj/MatMul_myl2_10", "timeMs" : 16.9637, "averageMs" : 0.00804347, "medianMs" : 0.007744, "percentage" : 0.593349 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_11", "timeMs" : 11.998, "averageMs" : 0.00568896, "medianMs" : 0.005536, "percentage" : 0.419662 }
+, { "name" : "__myl_Fc_myl2_12", "timeMs" : 29.0678, "averageMs" : 0.0137827, "medianMs" : 0.01376, "percentage" : 1.01672 }
+, { "name" : "/blocks_1/mlp/fc2/MatMul_myl2_13", "timeMs" : 27.0438, "averageMs" : 0.012823, "medianMs" : 0.01328, "percentage" : 0.945927 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_14", "timeMs" : 11.9179, "averageMs" : 0.00565099, "medianMs" : 0.005568, "percentage" : 0.416861 }
+, { "name" : "__mye55710+__mye55698+__mye55686_myl2_15", "timeMs" : 24.6341, "averageMs" : 0.0116805, "medianMs" : 0.011712, "percentage" : 0.861642 }
+, { "name" : "_gemm_mha_v2_myl2_16", "timeMs" : 46.2182, "averageMs" : 0.0219148, "medianMs" : 0.02192, "percentage" : 1.6166 }
+, { "name" : "/blocks_2/attn/proj/MatMul_myl2_17", "timeMs" : 16.8301, "averageMs" : 0.00798015, "medianMs" : 0.007616, "percentage" : 0.588678 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_18", "timeMs" : 11.5627, "averageMs" : 0.00548254, "medianMs" : 0.005504, "percentage" : 0.404435 }
+, { "name" : "__myl_Fc_myl2_19", "timeMs" : 28.9484, "averageMs" : 0.0137261, "medianMs" : 0.013728, "percentage" : 1.01255 }
+, { "name" : "/blocks_2/mlp/fc2/MatMul_myl2_20", "timeMs" : 27.2484, "averageMs" : 0.0129201, "medianMs" : 0.013312, "percentage" : 0.953084 }
+, { "name" : "__myl_MulAddMeanSubMulMean_myl2_21", "timeMs" : 11.8211, "averageMs" : 0.00560506, "medianMs" : 0.005536, "percentage" : 0.413472 }
+, { "name" : "__myl_AddSqrtDivMulMulMulAddSlicTranReshAdd_myl2_22", "timeMs" : 12.3325, "averageMs" : 0.00584756, "medianMs" : 0.005536, "percentage" : 0.431361 }
+, { "name" : "__mye55825+__mye55813+__mye55801_myl2_23", "timeMs" : 24.7264, "averageMs" : 0.0117242, "medianMs" : 0.011712, "percentage" : 0.864871 }
+, { "name" : "_gemm_mha_v2_myl2_24", "timeMs" : 46.2266, "averageMs" : 0.0219187, "medianMs" : 0.021888, "percentage" : 1.6169 }
+, { "name" : "/blocks_3/attn/proj/MatMul_myl2_25", "timeMs" : 16.7483, "averageMs" : 0.00794136, "medianMs" : 0.007744, "percentage" : 0.585816 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_26", "timeMs" : 11.6664, "averageMs" : 0.00553172, "medianMs" : 0.005504, "percentage" : 0.408063 }
+, { "name" : "__myl_Fc_myl2_27", "timeMs" : 29.026, "averageMs" : 0.0137629, "medianMs" : 0.013728, "percentage" : 1.01526 }
+, { "name" : "/blocks_3/mlp/fc2/MatMul_myl2_28", "timeMs" : 27.7497, "averageMs" : 0.0131578, "medianMs" : 0.0136, "percentage" : 0.970619 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_29", "timeMs" : 11.7861, "averageMs" : 0.00558849, "medianMs" : 0.005568, "percentage" : 0.41225 }
+, { "name" : "__mye55940+__mye55928+__mye55916_myl2_30", "timeMs" : 24.7602, "averageMs" : 0.0117403, "medianMs" : 0.011712, "percentage" : 0.866053 }
+, { "name" : "_gemm_mha_v2_myl2_31", "timeMs" : 46.1567, "averageMs" : 0.0218856, "medianMs" : 0.021888, "percentage" : 1.61445 }
+, { "name" : "/blocks_4/attn/proj/MatMul_myl2_32", "timeMs" : 16.7003, "averageMs" : 0.00791859, "medianMs" : 0.007744, "percentage" : 0.584137 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_33", "timeMs" : 11.5353, "averageMs" : 0.00546956, "medianMs" : 0.005504, "percentage" : 0.403477 }
+, { "name" : "__myl_Fc_myl2_34", "timeMs" : 28.9293, "averageMs" : 0.0137171, "medianMs" : 0.013728, "percentage" : 1.01188 }
+, { "name" : "/blocks_4/mlp/fc2/MatMul_myl2_35", "timeMs" : 27.7264, "averageMs" : 0.0131467, "medianMs" : 0.013472, "percentage" : 0.969802 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_36", "timeMs" : 11.5163, "averageMs" : 0.00546054, "medianMs" : 0.005504, "percentage" : 0.402812 }
+, { "name" : "__mye56055+__mye56043+__mye56031_myl2_37", "timeMs" : 24.9754, "averageMs" : 0.0118423, "medianMs" : 0.011744, "percentage" : 0.873579 }
+, { "name" : "_gemm_mha_v2_myl2_38", "timeMs" : 46.2335, "averageMs" : 0.021922, "medianMs" : 0.021888, "percentage" : 1.61714 }
+, { "name" : "/blocks_5/attn/proj/MatMul_myl2_39", "timeMs" : 17.5075, "averageMs" : 0.00830131, "medianMs" : 0.007808, "percentage" : 0.612369 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_40", "timeMs" : 11.3954, "averageMs" : 0.00540323, "medianMs" : 0.005472, "percentage" : 0.398584 }
+, { "name" : "__myl_Fc_myl2_41", "timeMs" : 28.8842, "averageMs" : 0.0136957, "medianMs" : 0.013696, "percentage" : 1.0103 }
+, { "name" : "/blocks_5/mlp/fc2/MatMul_myl2_42", "timeMs" : 27.8404, "averageMs" : 0.0132008, "medianMs" : 0.01344, "percentage" : 0.973791 }
+, { "name" : "__myl_MulAddMeanSubMulMean_myl2_43", "timeMs" : 11.5603, "averageMs" : 0.00548144, "medianMs" : 0.005536, "percentage" : 0.404353 }
+, { "name" : "__myl_AddSqrtDivMulMulMulAddAddSlicTranResh_myl2_44", "timeMs" : 11.6836, "averageMs" : 0.00553989, "medianMs" : 0.005536, "percentage" : 0.408665 }
+, { "name" : "__mye56170+__mye56158+__mye56146_myl2_45", "timeMs" : 24.7612, "averageMs" : 0.0117407, "medianMs" : 0.01184, "percentage" : 0.866088 }
+, { "name" : "_gemm_mha_v2_myl2_46", "timeMs" : 46.1686, "averageMs" : 0.0218912, "medianMs" : 0.021888, "percentage" : 1.61487 }
+, { "name" : "/blocks_6/attn/proj/MatMul_myl2_47", "timeMs" : 16.6024, "averageMs" : 0.00787217, "medianMs" : 0.007776, "percentage" : 0.580712 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_48", "timeMs" : 11.687, "averageMs" : 0.0055415, "medianMs" : 0.005568, "percentage" : 0.408784 }
+, { "name" : "__myl_Fc_myl2_49", "timeMs" : 28.8657, "averageMs" : 0.0136869, "medianMs" : 0.013664, "percentage" : 1.00965 }
+, { "name" : "/blocks_6/mlp/fc2/MatMul_myl2_50", "timeMs" : 27.578, "averageMs" : 0.0130763, "medianMs" : 0.013408, "percentage" : 0.964612 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_51", "timeMs" : 11.6203, "averageMs" : 0.00550986, "medianMs" : 0.005536, "percentage" : 0.40645 }
+, { "name" : "__mye56285+__mye56273+__mye56261_myl2_52", "timeMs" : 24.4773, "averageMs" : 0.0116061, "medianMs" : 0.011648, "percentage" : 0.856156 }
+, { "name" : "_gemm_mha_v2_myl2_53", "timeMs" : 46.1196, "averageMs" : 0.021868, "medianMs" : 0.021856, "percentage" : 1.61315 }
+, { "name" : "/blocks_7/attn/proj/MatMul_myl2_54", "timeMs" : 16.8974, "averageMs" : 0.00801202, "medianMs" : 0.007808, "percentage" : 0.591029 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_55", "timeMs" : 12.1343, "averageMs" : 0.00575357, "medianMs" : 0.005504, "percentage" : 0.424428 }
+, { "name" : "__myl_Fc_myl2_56", "timeMs" : 29.1805, "averageMs" : 0.0138362, "medianMs" : 0.013792, "percentage" : 1.02066 }
+, { "name" : "/blocks_7/mlp/fc2/MatMul_myl2_57", "timeMs" : 27.6967, "averageMs" : 0.0131326, "medianMs" : 0.01344, "percentage" : 0.968764 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_58", "timeMs" : 11.6048, "averageMs" : 0.00550252, "medianMs" : 0.005504, "percentage" : 0.405908 }
+, { "name" : "__mye56400+__mye56388+__mye56376_myl2_59", "timeMs" : 24.8492, "averageMs" : 0.0117825, "medianMs" : 0.01184, "percentage" : 0.869166 }
+, { "name" : "_gemm_mha_v2_myl2_60", "timeMs" : 46.2454, "averageMs" : 0.0219276, "medianMs" : 0.021888, "percentage" : 1.61755 }
+, { "name" : "/blocks_8/attn/proj/MatMul_myl2_61", "timeMs" : 17.5594, "averageMs" : 0.00832593, "medianMs" : 0.007872, "percentage" : 0.614185 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_62", "timeMs" : 11.7148, "averageMs" : 0.00555466, "medianMs" : 0.005504, "percentage" : 0.409755 }
+, { "name" : "__myl_Fc_myl2_63", "timeMs" : 28.8657, "averageMs" : 0.0136869, "medianMs" : 0.013696, "percentage" : 1.00965 }
+, { "name" : "/blocks_8/mlp/fc2/MatMul_myl2_64", "timeMs" : 27.8064, "averageMs" : 0.0131846, "medianMs" : 0.013632, "percentage" : 0.9726 }
+, { "name" : "__myl_MulAddMeanSubMulMean_myl2_65", "timeMs" : 12.0799, "averageMs" : 0.00572777, "medianMs" : 0.005536, "percentage" : 0.422525 }
+, { "name" : "__myl_AddSqrtDivMulMulMulAddAddSlicTranResh_myl2_66", "timeMs" : 11.6251, "averageMs" : 0.00551214, "medianMs" : 0.005504, "percentage" : 0.406618 }
+, { "name" : "__mye56515+__mye56503+__mye56491_myl2_67", "timeMs" : 24.556, "averageMs" : 0.0116434, "medianMs" : 0.01168, "percentage" : 0.858911 }
+, { "name" : "_gemm_mha_v2_myl2_68", "timeMs" : 46.1295, "averageMs" : 0.0218727, "medianMs" : 0.021888, "percentage" : 1.6135 }
+, { "name" : "/blocks_9/attn/proj/MatMul_myl2_69", "timeMs" : 16.8198, "averageMs" : 0.00797524, "medianMs" : 0.007872, "percentage" : 0.588315 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_70", "timeMs" : 11.725, "averageMs" : 0.0055595, "medianMs" : 0.005536, "percentage" : 0.410112 }
+, { "name" : "__myl_Fc_myl2_71", "timeMs" : 29.0757, "averageMs" : 0.0137865, "medianMs" : 0.013792, "percentage" : 1.017 }
+, { "name" : "/blocks_9/mlp/fc2/MatMul_myl2_72", "timeMs" : 27.6124, "averageMs" : 0.0130927, "medianMs" : 0.01344, "percentage" : 0.965816 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_73", "timeMs" : 11.6931, "averageMs" : 0.00554438, "medianMs" : 0.005504, "percentage" : 0.408996 }
+, { "name" : "__mye56630+__mye56618+__mye56606_myl2_74", "timeMs" : 24.9197, "averageMs" : 0.0118159, "medianMs" : 0.01168, "percentage" : 0.87163 }
+, { "name" : "_gemm_mha_v2_myl2_75", "timeMs" : 46.2665, "averageMs" : 0.0219376, "medianMs" : 0.021888, "percentage" : 1.61829 }
+, { "name" : "/blocks_10/attn/proj/MatMul_myl2_76", "timeMs" : 16.5941, "averageMs" : 0.00786824, "medianMs" : 0.007776, "percentage" : 0.580422 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_77", "timeMs" : 11.5394, "averageMs" : 0.0054715, "medianMs" : 0.005504, "percentage" : 0.40362 }
+, { "name" : "__myl_Fc_myl2_78", "timeMs" : 29.0434, "averageMs" : 0.0137712, "medianMs" : 0.01376, "percentage" : 1.01587 }
+, { "name" : "/blocks_10/mlp/fc2/MatMul_myl2_79", "timeMs" : 28.0826, "averageMs" : 0.0133156, "medianMs" : 0.013696, "percentage" : 0.98226 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_80", "timeMs" : 11.5579, "averageMs" : 0.00548029, "medianMs" : 0.005536, "percentage" : 0.404269 }
+, { "name" : "__mye56745+__mye56733+__mye56721_myl2_81", "timeMs" : 24.5709, "averageMs" : 0.0116505, "medianMs" : 0.01168, "percentage" : 0.859429 }
+, { "name" : "_gemm_mha_v2_myl2_82", "timeMs" : 45.8392, "averageMs" : 0.021735, "medianMs" : 0.021728, "percentage" : 1.60334 }
+, { "name" : "/blocks_11/attn/proj/MatMul_myl2_83", "timeMs" : 16.3418, "averageMs" : 0.00774859, "medianMs" : 0.007744, "percentage" : 0.571596 }
+, { "name" : "__myl_MulAddMeanSubMulMeanAddSqrtDivMulMulAdd_myl2_84", "timeMs" : 11.8595, "averageMs" : 0.00562327, "medianMs" : 0.005696, "percentage" : 0.414816 }
+, { "name" : "__myl_Fc_myl2_85", "timeMs" : 28.085, "averageMs" : 0.0133167, "medianMs" : 0.013376, "percentage" : 0.982346 }
+, { "name" : "/blocks_11/mlp/fc2/MatMul_myl2_86", "timeMs" : 27.5213, "averageMs" : 0.0130495, "medianMs" : 0.013216, "percentage" : 0.962629 }
+, { "name" : "__myl_MulAddMeanSubMulMean_myl2_87", "timeMs" : 10.4404, "averageMs" : 0.00495039, "medianMs" : 0.005056, "percentage" : 0.365179 }
+, { "name" : "__myl_AddSqrtDivMulMulAddSlicTranResh_myl2_88", "timeMs" : 10.618, "averageMs" : 0.0050346, "medianMs" : 0.00512, "percentage" : 0.371391 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /depth_head/projects.3/Conv", "timeMs" : 11.9045, "averageMs" : 0.0056446, "medianMs" : 0.005568, "percentage" : 0.41639 }
+, { "name" : "/depth_head/projects.3/Conv", "timeMs" : 14.5485, "averageMs" : 0.00689829, "medianMs" : 0.006144, "percentage" : 0.508871 }
+, { "name" : "/depth_head/resize_layers.3/Conv", "timeMs" : 21.6781, "averageMs" : 0.0102789, "medianMs" : 0.01024, "percentage" : 0.758249 }
+, { "name" : "/depth_head/layer4_rn/Conv", "timeMs" : 21.9704, "averageMs" : 0.0104175, "medianMs" : 0.01024, "percentage" : 0.768473 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /depth_head/projects.2/Conv", "timeMs" : 12.8837, "averageMs" : 0.00610892, "medianMs" : 0.006144, "percentage" : 0.450642 }
+, { "name" : "/depth_head/projects.2/Conv", "timeMs" : 13.0927, "averageMs" : 0.006208, "medianMs" : 0.006144, "percentage" : 0.45795 }
+, { "name" : "/depth_head/layer3_rn/Conv", "timeMs" : 18.1323, "averageMs" : 0.00859758, "medianMs" : 0.008192, "percentage" : 0.634224 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /depth_head/projects.1/Conv", "timeMs" : 12.3011, "averageMs" : 0.00583265, "medianMs" : 0.006144, "percentage" : 0.430261 }
+, { "name" : "/depth_head/projects.1/Conv", "timeMs" : 13.7583, "averageMs" : 0.00652361, "medianMs" : 0.006144, "percentage" : 0.481232 }
+, { "name" : "/depth_head/resize_layers.1/ConvTranspose", "timeMs" : 13.2529, "averageMs" : 0.00628398, "medianMs" : 0.006144, "percentage" : 0.463555 }
+, { "name" : "/depth_head/layer2_rn/Conv", "timeMs" : 18.3035, "averageMs" : 0.00867877, "medianMs" : 0.008192, "percentage" : 0.640214 }
+, { "name" : "Reformatting CopyNode for Input Tensor 0 to /depth_head/projects.0/Conv", "timeMs" : 12.4729, "averageMs" : 0.00591413, "medianMs" : 0.006144, "percentage" : 0.436272 }
+, { "name" : "/depth_head/projects.0/Conv", "timeMs" : 12.8794, "averageMs" : 0.00610689, "medianMs" : 0.006144, "percentage" : 0.450492 }
+, { "name" : "/depth_head/resize_layers.0/ConvTranspose", "timeMs" : 17.4835, "averageMs" : 0.00828993, "medianMs" : 0.008192, "percentage" : 0.61153 }
+, { "name" : "/depth_head/layer1_rn/Conv", "timeMs" : 19.1233, "averageMs" : 0.00906747, "medianMs" : 0.008448, "percentage" : 0.668886 }
+, { "name" : "PWN(/depth_head/refinenet4/resConfUnit2/activation/Relu)", "timeMs" : 9.51985, "averageMs" : 0.00451392, "medianMs" : 0.004192, "percentage" : 0.332981 }
+, { "name" : "PWN(/depth_head/refinenet3/resConfUnit1/activation/Relu)", "timeMs" : 8.88345, "averageMs" : 0.00421216, "medianMs" : 0.004096, "percentage" : 0.310722 }
+, { "name" : "PWN(/depth_head/refinenet2/resConfUnit1/activation/Relu)", "timeMs" : 8.46922, "averageMs" : 0.00401575, "medianMs" : 0.004096, "percentage" : 0.296233 }
+, { "name" : "PWN(/depth_head/refinenet1/resConfUnit1/activation/Relu)", "timeMs" : 9.17947, "averageMs" : 0.00435252, "medianMs" : 0.004096, "percentage" : 0.321076 }
+, { "name" : "/depth_head/refinenet1/resConfUnit1/conv1/Conv + /depth_head/refinenet1/resConfUnit1/activation_1/Relu", "timeMs" : 18.946, "averageMs" : 0.00898341, "medianMs" : 0.008192, "percentage" : 0.662686 }
+, { "name" : "/depth_head/refinenet2/resConfUnit1/conv1/Conv + /depth_head/refinenet2/resConfUnit1/activation_1/Relu", "timeMs" : 12.8749, "averageMs" : 0.00610473, "medianMs" : 0.006144, "percentage" : 0.450332 }
+, { "name" : "/depth_head/refinenet3/resConfUnit1/conv1/Conv + /depth_head/refinenet3/resConfUnit1/activation_1/Relu", "timeMs" : 10.7508, "averageMs" : 0.00509758, "medianMs" : 0.004352, "percentage" : 0.376037 }
+, { "name" : "/depth_head/refinenet4/resConfUnit2/conv1/Conv + /depth_head/refinenet4/resConfUnit2/activation_1/Relu", "timeMs" : 8.93607, "averageMs" : 0.00423711, "medianMs" : 0.004096, "percentage" : 0.312562 }
+, { "name" : "/depth_head/refinenet4/resConfUnit2/conv2/Conv + /depth_head/refinenet4/resConfUnit2/Add", "timeMs" : 13.4629, "averageMs" : 0.00638356, "medianMs" : 0.006144, "percentage" : 0.470901 }
+, { "name" : "/depth_head/refinenet4/Resize", "timeMs" : 9.19749, "averageMs" : 0.00436107, "medianMs" : 0.004096, "percentage" : 0.321706 }
+, { "name" : "/depth_head/refinenet3/resConfUnit1/conv2/Conv + /depth_head/refinenet3/resConfUnit1/Add", "timeMs" : 12.8246, "averageMs" : 0.00608089, "medianMs" : 0.006144, "percentage" : 0.448573 }
+, { "name" : "/depth_head/refinenet4/out_conv/Conv + /depth_head/refinenet3/Add", "timeMs" : 10.0746, "averageMs" : 0.00477697, "medianMs" : 0.004352, "percentage" : 0.352386 }
+, { "name" : "PWN(/depth_head/refinenet3/resConfUnit2/activation/Relu)", "timeMs" : 8.89415, "averageMs" : 0.00421724, "medianMs" : 0.004096, "percentage" : 0.311096 }
+, { "name" : "/depth_head/refinenet3/resConfUnit2/conv1/Conv + /depth_head/refinenet3/resConfUnit2/activation_1/Relu", "timeMs" : 11.4395, "averageMs" : 0.00542414, "medianMs" : 0.005888, "percentage" : 0.400126 }
+, { "name" : "/depth_head/refinenet3/resConfUnit2/conv2/Conv + /depth_head/refinenet3/resConfUnit2/Add", "timeMs" : 13.2838, "averageMs" : 0.00629864, "medianMs" : 0.006144, "percentage" : 0.464636 }
+, { "name" : "/depth_head/refinenet3/Resize", "timeMs" : 9.49446, "averageMs" : 0.00450188, "medianMs" : 0.004096, "percentage" : 0.332094 }
+, { "name" : "/depth_head/refinenet2/resConfUnit1/conv2/Conv + /depth_head/refinenet2/resConfUnit1/Add", "timeMs" : 14.3835, "averageMs" : 0.00682007, "medianMs" : 0.006432, "percentage" : 0.503101 }
+, { "name" : "/depth_head/refinenet3/out_conv/Conv + /depth_head/refinenet2/Add", "timeMs" : 14.1055, "averageMs" : 0.00668824, "medianMs" : 0.006144, "percentage" : 0.493377 }
+, { "name" : "PWN(/depth_head/refinenet2/resConfUnit2/activation/Relu)", "timeMs" : 8.73205, "averageMs" : 0.00414037, "medianMs" : 0.004096, "percentage" : 0.305426 }
+, { "name" : "/depth_head/refinenet2/resConfUnit2/conv1/Conv + /depth_head/refinenet2/resConfUnit2/activation_1/Relu", "timeMs" : 13.2139, "averageMs" : 0.00626548, "medianMs" : 0.0064, "percentage" : 0.46219 }
+, { "name" : "/depth_head/refinenet2/resConfUnit2/conv2/Conv + /depth_head/refinenet2/resConfUnit2/Add", "timeMs" : 17.4868, "averageMs" : 0.00829151, "medianMs" : 0.007936, "percentage" : 0.611646 }
+, { "name" : "/depth_head/refinenet2/Resize", "timeMs" : 9.75146, "averageMs" : 0.00462374, "medianMs" : 0.004128, "percentage" : 0.341083 }
+, { "name" : "/depth_head/refinenet1/resConfUnit1/conv2/Conv + /depth_head/refinenet1/resConfUnit1/Add", "timeMs" : 21.9857, "averageMs" : 0.0104247, "medianMs" : 0.01024, "percentage" : 0.769009 }
+, { "name" : "/depth_head/refinenet2/out_conv/Conv + /depth_head/refinenet1/Add", "timeMs" : 15.2792, "averageMs" : 0.00724476, "medianMs" : 0.0064, "percentage" : 0.53443 }
+, { "name" : "PWN(/depth_head/refinenet1/resConfUnit2/activation/Relu)", "timeMs" : 8.77099, "averageMs" : 0.00415884, "medianMs" : 0.004096, "percentage" : 0.306788 }
+, { "name" : "/depth_head/refinenet1/resConfUnit2/conv1/Conv + /depth_head/refinenet1/resConfUnit2/activation_1/Relu", "timeMs" : 18.4386, "averageMs" : 0.00874282, "medianMs" : 0.008448, "percentage" : 0.644938 }
+, { "name" : "/depth_head/refinenet1/resConfUnit2/conv2/Conv + /depth_head/refinenet1/resConfUnit2/Add", "timeMs" : 21.3637, "averageMs" : 0.0101298, "medianMs" : 0.01024, "percentage" : 0.747252 }
+, { "name" : "/depth_head/refinenet1/Resize", "timeMs" : 14.9837, "averageMs" : 0.00710466, "medianMs" : 0.006176, "percentage" : 0.524095 }
+, { "name" : "/depth_head/refinenet1/out_conv/Conv", "timeMs" : 17.2879, "averageMs" : 0.00819718, "medianMs" : 0.008192, "percentage" : 0.604688 }
+, { "name" : "/depth_head/output_conv1/Conv", "timeMs" : 30.242, "averageMs" : 0.0143395, "medianMs" : 0.014336, "percentage" : 1.05779 }
+, { "name" : "/depth_head/Resize", "timeMs" : 17.2716, "averageMs" : 0.00818949, "medianMs" : 0.008192, "percentage" : 0.60412 }
+, { "name" : "/depth_head/output_conv2/output_conv2.0/Conv + /depth_head/output_conv2/output_conv2.1/Relu", "timeMs" : 43.5676, "averageMs" : 0.020658, "medianMs" : 0.02048, "percentage" : 1.52389 }
+, { "name" : "/depth_head/output_conv2/output_conv2.2/Conv + /depth_head/output_conv2/output_conv2.3/Relu + /Relu", "timeMs" : 34.5523, "averageMs" : 0.0163832, "medianMs" : 0.016384, "percentage" : 1.20856 }
+]

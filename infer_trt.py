@@ -5,6 +5,7 @@ import time
 import cv2
 import numpy as np
 import tensorrt as trt
+import matplotlib.pyplot as plt
 
 import pycuda.driver as cuda
 import pycuda.autoinit  # initializes CUDA context
@@ -27,17 +28,13 @@ def preprocess_bgr_to_nchw_fp16(bgr: np.ndarray, input_size: int) -> np.ndarray:
     return np.ascontiguousarray(nchw.astype(np.float16))
 
 
-def greyscale_depth(depth_2d: np.ndarray, out_w: int, out_h: int) -> np.ndarray:
-    depth = cv2.resize(depth_2d, (out_w, out_h), interpolation=cv2.INTER_CUBIC)
-    dmin, dmax = float(depth.min()), float(depth.max())
-    if dmax - dmin < 1e-12:
-        depth_u16 = np.zeros_like(depth, dtype=np.uint8)
-    # else:
-    #     depth_u16 = ((depth - dmin) / (dmax - dmin) * 255.0).astype(np.uint8)
-    # return cv2.applyColorMap(depth_u16, cv2.COLORMAP_INFERNO)
-    depth_norm = (depth - dmin) / (dmax - dmin)  # 0..1
-    depth_u16 = np.clip(depth_norm * 65535.0, 0, 65535).astype(np.uint16)
-    return depth_u16
+def normalize_depth(depth_map: np.ndarray) -> np.ndarray:
+    """
+    Normalizes depth map to 0.0 - 1.0 for visualization.
+    """
+    d_min = depth_map.min()
+    d_max = depth_map.max()
+    return (depth_map - d_min) / (d_max - d_min + 1e-8)
 
 
 def load_engine(engine_path: str, logger: trt.ILogger) -> trt.ICudaEngine:
@@ -231,8 +228,28 @@ def main():
     name, out = last_out[0]
     depth2d = squeeze_depth_to_hw(out, name)
 
-    greyscale = greyscale_depth(depth2d, w0, h0)
-    cv2.imwrite(args.out, greyscale)
+    # Resize and normalize depth for visualization
+    depth_resized = cv2.resize(depth2d, (w0, h0), interpolation=cv2.INTER_CUBIC)
+    depth_norm = normalize_depth(depth_resized)
+
+    # Plot grid with original image and depth map (same format as infer_mlpackage.py)
+    rgb = cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB)
+
+    plt.figure(figsize=(10, 5))
+
+    plt.subplot(1, 2, 1)
+    plt.title("Original Input")
+    plt.imshow(rgb)
+    plt.axis("off")
+
+    plt.subplot(1, 2, 2)
+    plt.title("Depth Prediction")
+    plt.imshow(depth_norm, cmap='inferno')
+    plt.axis("off")
+
+    plt.tight_layout()
+    plt.savefig(args.out, dpi=150)
+    plt.close()
     print(f"Saved depth visualization to: {args.out}")
 
 
